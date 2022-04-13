@@ -30,7 +30,7 @@ h1 {
 }
 
 .app:before {
-  content: ' ';
+  content: '';
   background: url(./img/bg.jpg) no-repeat center center/cover;
   position: absolute;
   width: 100%;
@@ -42,7 +42,7 @@ h1 {
 
 .container {
   max-width: 700px;
-  height: 700px;
+  height: 600px;
   margin: auto;
   padding: 0 1rem;
   position: relative;
@@ -61,16 +61,17 @@ h1 {
   position: relative;
   right: -90%;
   transform-origin: 0 0;
-  transform: rotate(266deg);
+  transform: rotate(269deg);
 }
 
 .app .bottom {
   display: flex;
   justify-content: space-evenly;
+
   text-align: center;
   width: 100%;
   margin: 1rem auto;
-  padding: 1rem 0;
-  border-radius: 12px;
+  padding: 1rem;
+  border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.2);
 }
