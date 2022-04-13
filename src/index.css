@@ -29,6 +29,23 @@ h1 {
   color: #fff;
 }
 
+.app .search {
+  text-align: center;
+  padding: 1rem;
+}
+
+.app input {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::placeholder {
+  color: #888;
+}
+
 .app:before {
   content: '';
   background: url(./img/bg.jpg) no-repeat center center/cover;
