@@ -39,23 +39,32 @@ function App() {
             {data.main ? <h1>{data.main.temp}°C</h1> : null}
           </div>
           <div className='details'>
-            <p>Cloudy</p>
+            {data.weather ? <p>{data.weather[0].main}</p> : null}
           </div>
         </div>
-        <div className='bottom'>
-          <div className='feels-like'>
-            <p className='bold'>2 °C</p>
-            <p>Feels Like</p>
+        {data.name != undefined && (
+          <div className='bottom'>
+            <div className='feels-like'>
+              {data.main ? (
+                <p className='bold'>{data.main.feels_like}°C</p>
+              ) : null}
+
+              <p>Feels Like</p>
+            </div>
+            <div className='humidity'>
+              {data.main ? <p className='bold'>{data.main.humidity}%</p> : null}
+
+              <p>Humidity</p>
+            </div>
+            <div className='wind'>
+              {data.main ? (
+                <p className='bold'>{data.wind.speed} km/h</p>
+              ) : null}
+
+              <p>Wind Speed</p>
+            </div>
           </div>
-          <div className='humidity'>
-            <p className='bold'>42%</p>
-            <p>Humidity</p>
-          </div>
-          <div className='wind'>
-            <p className='bold'>21 MPH</p>
-            <p>Wind Speed</p>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   )
