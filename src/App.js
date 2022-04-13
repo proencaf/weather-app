@@ -36,7 +36,7 @@ function App() {
             <p>{data.name}</p>
           </div>
           <div className='temperature'>
-            {data.main ? <h1>{data.main.temp}°C</h1> : null}
+            {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
           </div>
           <div className='details'>
             {data.weather ? <p>{data.weather[0].main}</p> : null}
@@ -46,7 +46,7 @@ function App() {
           <div className='bottom'>
             <div className='feels-like'>
               {data.main ? (
-                <p className='bold'>{data.main.feels_like}°C</p>
+                <p className='bold'>{data.main.feels_like.toFixed()}°C</p>
               ) : null}
 
               <p>Feels Like</p>
@@ -58,7 +58,7 @@ function App() {
             </div>
             <div className='wind'>
               {data.main ? (
-                <p className='bold'>{data.wind.speed} km/h</p>
+                <p className='bold'>{data.wind.speed.toFixed()} km/h</p>
               ) : null}
 
               <p>Wind Speed</p>
