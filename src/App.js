@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import React, { useState } from 'react'
 import './index.css'
 import axios from 'axios'
@@ -6,7 +7,9 @@ function App() {
   const [data, setData] = useState({})
   const [location, setLocation] = useState('')
 
-  const url = ` https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=c7266e829fc18c4132108240ce7073e8
+  const url = ` https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}
+
+
 `
 
   const searchLocation = (event) => {
