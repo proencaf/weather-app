@@ -23,7 +23,15 @@ function App() {
   }
 
   return (
-    <div className='app'>
+    <div
+      className={
+        typeof data.main != 'undefined'
+          ? data.main.temp > 15
+            ? 'app'
+            : 'app cold'
+          : 'app'
+      }
+    >
       <div className='search'>
         <input
           placeholder='Search location...'
