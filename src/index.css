@@ -27,10 +27,21 @@ h1 {
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
-  background: url(./img/weather-bg.jpg) no-repeat center center/cover;
+  background: url(./img/start.jpg) no-repeat center center/cover;
   top: 0;
   left: 0;
   /* z-index: -1; */
+}
+
+.app.warm {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  background: url(./img/warm.jpg) no-repeat center center/cover;
+  top: 0;
+  left: 0;
 }
 
 .app.cold {

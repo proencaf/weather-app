@@ -27,7 +27,7 @@ function App() {
       className={
         typeof data.main != 'undefined'
           ? data.main.temp > 15
-            ? 'app'
+            ? 'app warm'
             : 'app cold'
           : 'app'
       }
