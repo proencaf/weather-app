@@ -67,6 +67,7 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.8);
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 8px;
+  outline: none;
 }
 
 .app input:hover {
